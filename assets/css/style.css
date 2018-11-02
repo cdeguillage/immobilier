@@ -1,0 +1,95 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.page-title {
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 2px solid #e8e8e8;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 50% 0 0;
+    text-shadow: 1px 1px #000000;
+}
+
+.category-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.4rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    padding-left: 20px;
+    background-color: rgba(0, 123, 255, 0.5);
+    text-shadow: 1px 1px #000000;
+}
+
+a {
+    color: black;
+}
+
+.stitle-redirection {
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 2px solid #e8e8e8;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #dc3545;
+    text-shadow: 2px 2px #000000;
+}
+
+.movie-name {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1rem;
+}
+
+.max-size {
+    max-height: 5.5rem;
+}
+
+.min-size-tab-entete {
+    min-height: 2rem;
+}
+
+.min-size-tab-contenu {
+    min-height: 8.8rem;
+}
+
+.min-size-tab {
+    min-height: 11rem;
+}
+
+.img-size {
+    width: 75%;
+    height: 91%;
+}
+
+img {
+    z-index: 2015;
+}
+
+.img-pochette {
+    width: 4rem;
+    height: 5rem;
+}
+
+.card-transparance {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card-img-top-container {
+    overflow: hidden;
+    position: relative;
+    max-height: 6rem;
+}
+
+textarea[name=description] {
+   resize: none;
+}
+
