@@ -40,7 +40,7 @@
                         <div class="row">
                             <div class="col-9">
                                 <div class="bg-primary text-white min-size-tab-entete m-1 p-1 text-right">
-                                    <?php echo $logement['surface']. " m2"; ?>
+                                    <?php echo formatSurface($logement['surface']). " m2"; ?>
                                 </div>
                                 <div class="card-body bg-white min-size-tab-contenu">
                                     <h6 class="card-title"><?php echo $logement['description']; ?></h6>

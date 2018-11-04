@@ -17,3 +17,11 @@ function formatPrice(int $price, int $id_typeLogement = null) {
     return $first;
 }
 
+// Formate et stylise la surface
+function formatSurface(int $surface) {
+	$surface = number_format($surface, 2, ',', ' ');
+	$surface = str_replace(',', '', $surface);
+	$surface = str_replace('.', '', $surface);
+	$first = substr($surface, 0, -2);
+    return $first;
+}

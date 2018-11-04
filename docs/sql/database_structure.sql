@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `immobilier`.`logement` (
   `photo` VARCHAR(255) NULL,
   `description` VARCHAR(255) NULL,
   `id_typeLogement` INT NOT NULL,
-  PRIMARY KEY (`id_logement`)
+  PRIMARY KEY (`id_logement`))
 ENGINE = InnoDB;
 
 

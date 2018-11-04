@@ -1,2 +1,2 @@
-INSERT INTO `immobilier`.`type` (`nom`) VALUES ('location');
-INSERT INTO `immobilier`.`type` (`nom`) VALUES ('vente');
+INSERT INTO `immobilier`.`type` (`typeLogement`) VALUES ('location');
+INSERT INTO `immobilier`.`type` (`typeLogement`) VALUES ('vente');
