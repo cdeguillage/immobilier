@@ -7,4 +7,3 @@ function redirection_timer(page, timing) {
 
     return page;
 }
-

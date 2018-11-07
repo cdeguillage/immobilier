@@ -192,7 +192,7 @@
                             } ?>
 
                             <!-- Code postal -->
-                            <label for="cp">Code postal :</label>
+                            <label class="mt-3" for="cp">Code postal :</label>
                             <input type="text" name="cp" id="cp" class="form-control <?php echo isset($errors['cp']) ? 'is-invalid' : null; ?>" value="<?php echo $cp; ?>">
                             <?php if (isset($errors['cp'])) {
                                 echo '<div class="invalid-feedback">';
@@ -201,7 +201,7 @@
                             } ?>
 
                             <!-- Ville -->
-                            <label for="ville">Ville :</label>
+                            <label class="mt-3" for="ville">Ville :</label>
                             <input type="text" name="ville" id="ville" class="form-control <?php echo isset($errors['ville']) ? 'is-invalid' : null; ?>" value="<?php echo $ville; ?>">
                             <?php if (isset($errors['ville'])) {
                                 echo '<div class="invalid-feedback">';
@@ -210,7 +210,7 @@
                             } ?>
 
                             <!-- Photo -->
-                            <label for="photo">Photo :</label>
+                            <label class="mt-3" for="photo">Photo :</label>
                             <input type="file" name="photo" id="photo" class="form-control" value="<?php echo empty($photo) ? '' : $photo['name']; ?>">
                             <?php if (isset($errors['photo'])) {
                                 echo '<div class="invalid-feedback">';
@@ -218,8 +218,8 @@
                                 echo '</div>';
                             } ?>
 
-                            <div class="border mt-3 mr-3 ml-3 photosize-add">
-                                <img src="<?php echo isset($photo['name']) ? 'assets/img/photo/no-photo.png' : $photo['name']; ?>" />
+                            <div class="border mt-2 cadre-affichephoto">
+                                <img id="affichephoto" class="cadre-affichephoto" src="<?= 'assets/img/photo/no-photo.png'; ?>" />
                             </div>
 
                         </div>
@@ -244,7 +244,7 @@
                             } ?>
 
                             <!-- Surface -->
-                            <label for="surface">Surface (en m2) :</label>
+                            <label class="mt-3" for="surface">Surface (en m2) :</label>
                             <input type="text" name="surface" id="surface" class="form-control <?php echo isset($errors['surface']) ? 'is-invalid' : null; ?>" value="<?php echo $surface; ?>">
                             <?php if (isset($errors['surface'])) {
                                 echo '<div class="invalid-feedback">';
@@ -253,7 +253,7 @@
                             } ?>
 
                             <!-- Prix -->
-                            <label for="prix">Prix :</label>
+                            <label class="mt-3" for="prix">Prix :</label>
                             <input type="text" name="prix" id="prix" class="form-control <?php echo isset($errors['prix']) ? 'is-invalid' : null; ?>" value="<?php echo $prix; ?>">
                             <?php if (isset($errors['prix'])) {
                                 echo '<div class="invalid-feedback">';
@@ -262,8 +262,8 @@
                             } ?>
 
                             <!-- Description -->
-                            <label for="description">Description :</label>
-                            <textarea name="description" id="description" class="form-control <?php echo isset($errors['description']) ? 'is-invalid' : null; ?>" rows="7" minlength="10" maxlength="255"><?php echo $description; ?></textarea>
+                            <label class="mt-3" for="description">Description :</label>
+                            <textarea name="description" id="description" class="form-control <?php echo isset($errors['description']) ? 'is-invalid' : null; ?>" rows="12" minlength="10" maxlength="255"><?php echo $description; ?></textarea>
                             <?php if (isset($errors['description'])) {
                                 echo '<div class="invalid-feedback">';
                                 echo $errors['description'];

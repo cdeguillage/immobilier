@@ -3,7 +3,7 @@
     // On crée une connexion à la BDD
     try
     {
-        $db = new PDO('mysql:host=localhost;port=3306;dbname=immobilier;charset=utf8', 'exowf3', '',
+        $db = new PDO('mysql:host=localhost;port=3306;dbname=immobilier;charset=utf8', 'root', '',
                     [
                     // Activation de la gestion des messages d'erreur xdebug
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,

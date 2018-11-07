@@ -74,6 +74,11 @@ img {
     z-index: 2015;
 }
 
+.cadre-affichephoto {
+    width: 300px;
+    height: 250px;
+}
+
 .img-pochette {
     width: 4rem;
     height: 5rem;
